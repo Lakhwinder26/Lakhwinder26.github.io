@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: inherit;
+}
+
+.container-fluid {
+    overflow: hidden;
+}
+
+nav {
+    transition: 0.4s;
+}
+
+.nav-item {
+    text-transform: capitalize;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-family: fantasy;
+    letter-spacing: 0.2em;
+    color: darkblue;
+    transform: scale(1.3)
+}
+
+.nav-link {
+    color: grey;
+    filter: brightness(55%);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-left: 3em;
+    transition: all 0.35s
+}
+
+.nav-link:hover {
+    transform: scale(1.1) skewY(-2deg)
+}
+
+
+
+nav.sticky {
+    position: fixed;
+    width: 100%;
+    background: black;
+    z-index: 111;
+    left: 0;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+nav.sticky div ul li a {
+    color: white;
+    filter: brightness(150);
+}
+
+.main-heading {
+    font-family: fantasy;
+    color: grey;
+    filter: brightness(55%);
+    letter-spacing: 4.55px;
+    color:
+}
+
+.backEffect {Effect
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backEffect::before, .backEffect::after {
+    content: "";
+    position: absolute;
+    background-color: lightblue;
+    opacity: 0.15;
+    border-radius: 60%;
+    height: 70%;
+    width: 50%;
+}
+
+.backEffect::before {
+    margin-right: 1%;
+    z-index: -112;
+
+}
+
+.backEffect::after {
+    top: 20%;
+    right: -13%;
+    z-index: -111;
+}
+
+video {
+    border: 20px solid transparent;
+    border-image: linear-gradient(45deg, blue, magenta);
+    border-image-slice: 1;
+
+}
+
+.shadow {
+    display: flex;
+    margin: 20px;
+    box-shadow: 10px 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 15px 20px 0px;
+    overflow: hidden;
+}
+
+.shadow p {
+    margin-left: 10px;
+    align-self: center;
+    font-weight: bold;
+
+}
+
+.shadow p span {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+button {
+    outline: none;
+}
+
+.carousel {
+    margin: 15vh;
+    background: linear-gradient(to left, #efefef, transparent);
+    padding: 1%
+}
+
+.imagecar {
+    box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.4);
+    margin: 1%;
+}
+
+footer {
+    background: black;
+    opacity: 0.8;
+    color: white;
+    font-family: bold;
+    height: auto
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .none {
+        display: none
+    }
+
+    .backEffect::before, .backEffect::after{
+        display: none
+    }
+}
+
+.reveal{
+    transform: translateX(-700px);
+    transition: 0.51s;
+}
+
+.reveal[data-scroll="in"] {
+    transform: translateX(0);
+}
+
+.imgreveal {
+    transform: translateX(700px);
+    transition: 0.51s;
+}
+
+.imgreveal[data-scroll="in"] {
+    transform: translateX(0);
+}
+
+.sideleft {
+    transform: translateX(-700px);
+    transition: 0.51s;
+}
+
+.sideleft[data-scroll="in"]{
+    transform: translateX(0);
+}
+
+.between {
+    opacity:0;
+    transition: all 0.8s;
+    transform-origin: center;
+    transform: scale(0);
+}
+
+.between[data-scroll="in"]{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.sideright {
+    transform: translateX(700px);
+    transition: 0.51s;
+}
+
+.sideright[data-scroll="in"]{
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
